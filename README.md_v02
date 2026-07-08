@@ -1,7 +1,5 @@
-v02:(Continuação do V01)
-O script complementar implementa as seguintes tabelas e regras de negócio de configurações, segurança e controle de alterações:
-configuracoes: Armazena as preferências operacionais de um repositório, gerenciando níveis de visibilidade (público/privado), a ramificação padrão (branch) e permissões de recursos internos.
-seguranca_e_qualidade: Monitora o estado de proteção do repositório, controlando varreduras de vulnerabilidades, análises de dependências ativas e registro de alertas de segurança.
-commit_: Registra o histórico individual de envios de código feitos pelos usuários, utilizando chaves identificadoras baseadas em hashes criptográficos (SHA-1) e computando a volumetria de modificações de linhas.
-pull_request: Modela as propostas de mesclagem de código entre ramificações (branches), controlando o ciclo de vida da revisão por meio de estados específicos (aberto, fechado ou integrado).
-commit_pull_request: Tabela associativa (N:M) que permite agrupar múltiplos commits a uma mesma requisição de alteração (Pull Request), garantindo o rastreamento completo das revisões de código
+* **`configuracoes`**: Armazena as preferências operacionais de um repositório, gerenciando níveis de visibilidade (público ou privado), a ramificação padrão (*branch*) e permissões de recursos internos.
+* **`seguranca_e_qualidade`**: Monitora o estado de proteção do repositório, controlando varreduras de vulnerabilidades, análises de dependências ativas e registro de alertas de segurança.
+* **`commit_`**: Registra o histórico individual de envios de código feitos pelos usuários, utilizando chaves identificadoras baseadas em hashes criptográficos (SHA-1) e computando a volumetria de modificações de linhas.
+* **`pull_request`**: Modela as propostas de mesclagem de código entre ramificações, controlando o ciclo de vida da revisão por meio de estados específicos (aberto, fechado ou integrado).
+* **`commit_pull_request`**: Tabela associativa (N:M) que permite agrupar múltiplos commits a uma mesma requisição de alteração (*Pull Request*), garantindo o rastreamento completo das revisões de código.
