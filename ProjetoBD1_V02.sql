@@ -51,5 +51,5 @@ CREATE TABLE commit_pull_request (
     sha_commit CHAR(40) NOT NULL,
     PRIMARY KEY (id_pull_request, sha_commit),
     FOREIGN KEY (id_pull_request) REFERENCES pull_request(id),
-    FOREIGN KEY (sha_commit) REFERENCES commit(sha_hash)
+    FOREIGN KEY (sha_commit) REFERENCES commit_(sha_hash)
 );
