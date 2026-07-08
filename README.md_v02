@@ -1,3 +1,4 @@
+## Atualização do projeto de banco de dados
 * **`configuracoes`**: Armazena as preferências operacionais de um repositório, gerenciando níveis de visibilidade (público ou privado), a ramificação padrão (*branch*) e permissões de recursos internos.
 * **`seguranca_e_qualidade`**: Monitora o estado de proteção do repositório, controlando varreduras de vulnerabilidades, análises de dependências ativas e registro de alertas de segurança.
 * **`commit_`**: Registra o histórico individual de envios de código feitos pelos usuários, utilizando chaves identificadoras baseadas em hashes criptográficos (SHA-1) e computando a volumetria de modificações de linhas.
